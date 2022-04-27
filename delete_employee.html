@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Delete Employee</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+        Name: {{ employee.name }}<br/>
+        Surname: {{ employee.surname }}<br/>
+        Email: {{ employee.email }}<br/>
+        Contribution Size: {{ employee.contribution }}<br/>
+
+         {% if user_data %}
+          <form class="" action="/delete_employee/{{employee.id}}" method="post">
+             <input type="submit"  value="Delete">
+           </form>
+          <br/>
+          {% endif %}
+</body>
+</html>
