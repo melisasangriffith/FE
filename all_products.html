@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Update Product</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <form action="/all_product/{{product.idProduct}}" method="post" >
+            Name: <br/><input type="text" name="name" value="{{product.name}}" /><br/>
+            acquisitionPrice:<br/><input type="number" name="acquisitionPrice"  value="{{product.acquisitionPrice}}" /><br/>
+            salePrice:<br/><input type="number" name="salePrice" value="{{product.salePrice}}"/><br/>
+            type Size:<br/><input type="text" name="type" value="{{product.type}}"/><br/>
+            <input type="submit" name="update"/>
+        </form>
+</body>
+</html>
