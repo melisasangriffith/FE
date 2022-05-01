@@ -1,0 +1,9 @@
+<div style="margin-left: 40%">
+  <h1>List of products</h1>
+  <div *ngFor="let product of products">
+    <p>
+      <img src="../assets/img/croix.jpg" alt="" height="20" width="20" style="float: left">
+      {{ product.name }} ({{ product.type }}) | {{ product.salePrice }}€
+    </p>
+  </div>
+</div>
